@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_all_orders"
+        android:icon="@drawable/ic_all_orders"
+        android:title="All Orders" />
+
+    <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Menu" />
+
+    <item
+        android:id="@+id/navigation_accept_order"
+        android:icon="@drawable/ic_accept_order"
+        android:title="Service Status" />
+
+
+
+
+</menu>

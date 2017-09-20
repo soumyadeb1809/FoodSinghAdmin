@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="4dp"
+    android:alpha="0.9"
+    android:clickable="true"
+    android:background="@drawable/bck_order"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/timestamp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/item_group"
+            android:layout_above="@+id/amount"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/item"
+            android:textColor="@android:color/black"
+            android:text="CHICKEN BIRIYANI, CHAWAL DAL, KUCH TOH DE DO RE KAHNE KO"
+             />
+
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/item_group"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bck_category"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:text="7742075362"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+             android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timestamp"
+            android:text="2017-09-12 23:55"
+            android:layout_marginLeft="16dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_id"
+            android:text="FS15097823"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/timestamp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="₹230"
+            android:id="@+id/amount"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

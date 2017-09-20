@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="soumyadeb.foodsinghadmin.ui.ServiceStatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:alpha="0.9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="48dp"
+        android:textSize="28sp"
+        android:padding="16dp"
+        android:background="@drawable/bck_category"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/current_status"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/change_status"
+        android:layout_margin="56dp"
+        android:background="@drawable/bck_nt_accepting"
+        android:textColor="@android:color/white"
+        android:text="Start accepting orders"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="56dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:padding="24dp"
+        android:id="@+id/coupon"
+        android:text="Discount coupon: "
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/bck_coupon"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
